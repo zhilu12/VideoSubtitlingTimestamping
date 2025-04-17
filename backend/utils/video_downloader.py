@@ -9,7 +9,10 @@ def download_audio(url):
     samples_dir = os.path.join(root, "data", "samples")
     os.makedirs(samples_dir, exist_ok=True)
 
-    output_path = os.path.join(samples_dir, "%(title)s.%(ext)s")
+    output_dir = os.path.join(samples_dir, "%(title)s")
+    os.makedirs(output_dir, exist_ok=True)
+    
+    output_path = os.path.join(output_dir, "%(title)s.%(ext)s")
 
 
     # Downloading audio
