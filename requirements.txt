@@ -1,7 +1,4 @@
 yt-dlp
-os
-librosa
-ffmpeg
 openai-whisper
 jiwer
 numpy
