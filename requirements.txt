@@ -1,0 +1,10 @@
+yt-dlp
+os
+librosa
+ffmpeg
+openai-whisper
+jiwer
+numpy
+pandas
+torchaudio
+pydub
