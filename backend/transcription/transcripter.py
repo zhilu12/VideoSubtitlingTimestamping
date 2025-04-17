@@ -21,7 +21,8 @@ samples_dir = os.path.join(root, "data", "samples")
 
 # Librosa implementation
 def librosa_load_file(file_name):
-  audio_data, sampling_rate = librosa.load(os.join(samples_dir, file_name))  # Can be other formats too
+  audio_dir = os.join(samples_dir, file_name)
+  audio_data, sampling_rate = librosa.load(os.join(audio_dir, "audio.m4a"))  # Can be other formats too
   print(f"Sampling Rate: {sampling_rate} Hz")
   print(f"Audio Data Shape: {audio_data.shape}")
   print(f"Data Type: {audio_data.dtype}")

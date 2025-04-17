@@ -12,7 +12,7 @@ def download_audio(url):
     output_dir = os.path.join(samples_dir, "%(title)s")
     os.makedirs(output_dir, exist_ok=True)
     
-    output_path = os.path.join(output_dir, "%(title)s.%(ext)s")
+    output_path = os.path.join(output_dir, "audio.%(ext)s")
 
 
     # Downloading audio
