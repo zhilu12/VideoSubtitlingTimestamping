@@ -1,6 +1,5 @@
 import os 
 import librosa
-import pydub
 import numpy as np
 import torch
 import pandas as pd
@@ -19,9 +18,6 @@ from pydub import AudioSegment
 root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 
 samples_dir = os.path.join(root, "data", "samples")
-
-file_name = ''
-
 
 # Librosa implementation
 def librosa_load_file(file_name):
@@ -45,3 +41,21 @@ def pydub_load_file(file_name):
 
 
 # Transcripting with openAI whisper
+
+
+
+
+# Testing entrypoint and code
+
+if __name__ == "__main__":
+    file_name = ''
+    
+    file_data = # audio data loader
+    
+    output = # processed file_data with openAI whisper
+    
+    
+    # Saves to samples/data/file_name
+      # maybe a folder under samples/data/file_name for both the audio and transcript
+    
+    print("Downloaded to:", output)
