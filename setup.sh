@@ -18,7 +18,7 @@ pip3 install -r requirements.txt
 
 
 
-# Step 3: Check and install ffmpeg
+# Check and install ffmpeg
 if ! command -v ffmpeg &> /dev/null; then
     echo "ffmpeg not found. Attempting to install..."
 
